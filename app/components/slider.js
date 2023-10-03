@@ -38,11 +38,11 @@ const slider = ({
         }}
       transition={{ duration: 1,}}
       whileInView={{ opacity: 1, x: 0}}
-      className="w-full relative m-5 lg:w-1/2" onMouseUp={handleMouseUp}>
+      className="w-full relative m-5 lg:w-1/2" onPointerUp={handleMouseUp}>
       <div
         className="relative w-full lg:w-3/4 xl:w-1/2 aspect-[70/45] m-auto lg:mt-10 overflow-hidden select-none shadow-md"
-        onMouseMove={handleMove}
-        onMouseDown={handleMouseDown}
+        onPointerMove={handleMove}
+        onPointerDown={handleMouseDown}
       >
         <Image
           alt=""

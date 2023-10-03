@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
 import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import SuccessMessage from '../components/successmessage';
@@ -43,11 +43,11 @@ const Contact = () => {
         </div>
       <form onSubmit={sendEmail} ref={form} className='flex flex-col gap-2 w-[90%]'>
         <div className='flex flex-col lg:flex-row gap-2 w-full'>
-            <input required type="text" placeholder="Name" name="name" className="lg:w-1/2 px-6 py-2 border transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4"/>
-            <input required type="email" placeholder="Email" name="email" className="lg:w-1/2 px-6 py-2 border transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4"/>
+            <input required type="text" placeholder="Name" name="name" className="lg:w-1/2 px-6 py-2 border transition-all focus:border-gray-400/40 focus:border-b-4"/>
+            <input required type="email" placeholder="Email" name="email" className="lg:w-1/2 px-6 py-2 border transition-all focus:border-gray-400/40 focus:border-b-4"/>
         </div>
-        <input required type="text" placeholder='Subject' name="subject" className="px-6 py-2 border transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4"/>
-        <textarea required name="message" className="px-6 py-2 border transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4" cols="30" rows="10" placeholder="Message..." ></textarea>
+        <input required type="text" placeholder='Subject' name="subject" className="px-6 py-2 border transition-all focus:border-gray-400/40 focus:border-b-4"/>
+        <textarea required name="message" className="px-6 py-2 border transition-all focus:border-gray-400/40 focus:border-b-4" cols="30" rows="10" placeholder="Message..." ></textarea>
         <Button className="">SUBMIT</Button>
       </form>
       {emailSent && <SuccessMessage/>}
