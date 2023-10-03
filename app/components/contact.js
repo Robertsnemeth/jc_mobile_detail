@@ -9,13 +9,15 @@ import Button from '../components/button';
 const Contact = () => {
 
   const form = useRef();
+  const EMAIL_KEY = process.env.EMAIL_KEY;
 
   const [ emailSent, setEmailSent ] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_bqhmcwu', 'template_je9kgni', form.current, 'yYaTkV2LC8nxhsdxb' )
+    emailjs.sendForm( "service_bqhmcwu", 'template_je9kgni', form.current, 'yYaTkV2LC8nxhsdxb' )
       .then(res => {
+        console.log(EMAIL_KEY);
         console.log(res, "SUCCESS");
         e.target.reset();
         setEmailSent(true)
