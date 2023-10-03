@@ -68,7 +68,7 @@ const slider = ({
             left: `calc(${sliderPosition}% - 1px)`,
           }}
         >
-          <div className="bg-white absolute rounded-full h-3 w-3 -left-1 top-[calc(50%-5px)]" />
+          <div className="bg-white absolute rounded-full h-4 w-4 -left-[6px] top-[calc(50%-5px)]" />
         </div>
       </div>
     </motion.div>
