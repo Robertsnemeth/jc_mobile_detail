@@ -17,7 +17,7 @@ const navbar = () => {
     };
 
   return (
-    <nav className='flex justify-between items-center p-4 bg-black relative shadow-lg'>
+    <nav className='flex justify-between items-center p-4 bg-black relative shadow-xlg shadow-white'>
         <div className='lg:flex lg:justify-between'>
             <Link href={'/'}><Image src={logo} alt="logo" className="w-[75px] h-[50px] md:w-[100px] md:h-[75px] hover:opacity-80"/></Link>
             <div className='hidden lg:flex lg:gap-8 lg:ml-24'>

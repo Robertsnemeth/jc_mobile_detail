@@ -45,7 +45,7 @@ const slider = ({
         onPointerDown={handleMouseDown}
       >
         <Image
-          alt=""
+          alt="before image"
           fill
           priority
           src={after}
@@ -58,7 +58,7 @@ const slider = ({
           <Image
             fill
             priority
-            alt=""
+            alt="after image"
             src={before}
           />
         </div>
