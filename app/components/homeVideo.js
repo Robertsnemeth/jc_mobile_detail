@@ -15,7 +15,7 @@ const homeVideo = () => {
       className='-z-10 bg-black w-screen flex justify-center'
     >
         <video autoPlay loop muted className='shadow-md'>
-        <source className='w-screen h-screen' src={require("../../public/CorvetteDetailingNoMusic.mp4")} type="video/mp4"/>
+        <source className='w-screen h-screen' src={require("../../public/CorvetteDetailing.mp4")} type="video/mp4"/>
         </video>
   </motion.div>  )
 }
