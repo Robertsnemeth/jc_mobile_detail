@@ -8,7 +8,7 @@ const footer = () => {
   return (
     <footer className='bg-black text-white flex flex-col gap-2 items-center p-4'>
         <section className='flex gap-4'>
-            <a href="/" target="_blank">
+            <a href="https://www.facebook.com/profile.php?id=61551566326296" target="_blank">
               <FaFacebookF size='30'/>
             </a>
             <a href="https://www.instagram.com/jc_mobile_detailingllc/" target="_blank">
