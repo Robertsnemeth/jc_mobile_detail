@@ -49,6 +49,7 @@ const slider = ({
           fill
           priority
           src={after}
+          placeholder="blur"
         />
 
         <div
@@ -60,6 +61,7 @@ const slider = ({
             priority
             alt="after image"
             src={before}
+            placeholder="blur"
           />
         </div>
         <div 

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Slider from '../components/slider';
 import Car3 from '../../public/car-vector-1.webp';
 import Car4 from '../../public/car-vector-2.webp';
@@ -106,7 +107,7 @@ export default function Services () {
     <main className='flex flex-col gap-2 pb-5 items-center'>
         <div className='flex flex-col gap-1 items-center lg:w-3/4 text-center mt-5 p-2'>
             <h1 className='tracking-[5px] text-xl lg:text-2xl font-bold text-blue-400'>SERVICES</h1>
-            <p className="text-sm lg:text-xl">Here is our assortment of services we offer based on detaling packages and the size of the vehicle. Determine what is the best option for you and utilize the booking form to set up an appointment.</p>
+            <p className="text-sm lg:text-xl">Here is our assortment of services we offer based on detaling packages and the size of the vehicle. Determine what is the best option for you and utilize the booking form to set up an appointment. We are happy to offer a %15 discount to all teachers, first responders, law enforcement, military members (active and veterans) and nurses. We are grateful for what you do for our community!</p>
             <p className='text-center text-xs lg:text-sm font-extrabold'>(Pet hair, and severe dirtiness increase prices)</p>
         </div>
         <Slider before={Before1} after={After1}/>

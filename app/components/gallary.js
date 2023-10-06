@@ -19,7 +19,7 @@ const gallary = () => {
         {
         images.map((image, idx) => {
             return (
-                <Image src={image} alt="car image" className='w-[250px] lg:w-[375px] aspect-[4/3] transition-all duration-200 ' key={idx}/>
+                <Image src={image} alt="car image" placeholder="blur" className='w-[250px] lg:w-[300px] aspect-[4/3] transition-all duration-200 ' key={idx}/>
             )
         })
         }

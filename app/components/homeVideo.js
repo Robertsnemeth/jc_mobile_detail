@@ -14,8 +14,8 @@ const homeVideo = () => {
       whileInView={{ opacity: 1, y: 0}}
       className='-z-10 bg-black w-screen flex justify-center'
     >
-        <video autoPlay loop muted className='shadow-md'>
-        <source className='w-screen h-screen' src={require("../../public/CorvetteDetailing.mp4")} type="video/mp4"/>
+        <video autoPlay loop muted loading="lazy" className='shadow-md lg:w-3/4'>
+        <source src={require("../../public/CorvetteDetailingSmall.mp4")} type="video/mp4"/>
         </video>
   </motion.div>  )
 }
