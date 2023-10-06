@@ -36,8 +36,8 @@ const Contact = () => {
       transition={{ duration: 1 }}
       className="flex flex-col w-full sm:w-3/4 justify-center items-center text-center gap-2 h-screen relative">
         <div className='flex flex-col gap-2'>
-            <h1 className='tracking-[5px] text-3xl text-blue-400'>Booking</h1>
-            <p>
+            <h1 className='tracking-[5px] text-3xl text-blue-400 uppercase'>Booking</h1>
+            <p className='lg:text-lg'>
                 Please provide your Name, Email, Subject (your vehicle and the service you would like) and a quick message describing the time frame you are looking for. We will get back to you by the end of the day to schedule an appointment! 
             </p>
         </div>
