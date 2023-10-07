@@ -113,7 +113,7 @@ export default function Services () {
             <p className='lg:text-lg'>Here is our assortment of services we offer based on detaling packages and the size of the vehicle. Determine what is the best option for you and utilize the booking form to set up an appointment. We are happy to offer a %15 discount to all teachers, first responders, law enforcement, military members (active and veterans) and nurses. We are grateful for what you do for our community!</p>
             <p className='text-center text-sm font-extrabold'>(Pet hair, and severe dirtiness increase prices)</p>
         </div>
-        <Image src={BannerImage} alt="banner image of car" placeholder="blur" className='w-screen lg:w-3/4 shadow-xl'/>
+        <Image src={BannerImage} alt="banner image of car" placeholder="blur" className='w-screen lg:h-[600px] lg:w-[60%] shadow-xl'/>
         <Service serviceType={fullDetail}/>
         <BreakPoint/>
         <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px]'>
