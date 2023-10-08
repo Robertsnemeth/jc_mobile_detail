@@ -25,7 +25,7 @@ export default function Home() {
       <section className='m-2 p-2 flex flex-col items-center gap-4 lg:w-1/2'>
       <h1 className='text-1xl lg:text-2xl text-center tracking-[5px] capitalize mb-2 text-blue-400'>It's all in the details</h1>
         <p className='text-center lg:text-lg'>
-          We use the top of the line products when detailing your vehicle, from waxes, cleaners, polishing compounds and everything in between! We wouldn’t use anything but the best on our vehicles, so why would we do any dierent for our customers! 
+          We use the top of the line products when detailing your vehicle, from waxes, cleaners, polishing compounds and everything in between! We wouldn’t use anything but the best on our vehicles, so why would we do any different for our customers! 
         </p>
         <Link href="/services">
           <Button>Services</Button>

@@ -15,7 +15,8 @@ import Before3 from '../../public/IMG_3842.jpg';
 import After1 from '../../public/IMG_3702.jpg';
 import After2 from '../../public/IMG_3801.jpg';
 import After3 from '../../public/IMG_3849.jpg';
-import BannerImage from '../../public/IMG_5540.jpg';
+import Before4 from '../../public/IMG_5540.jpg';
+import After4 from '../../public/IMG_1761.jpg';
 
 
 
@@ -87,7 +88,7 @@ export default function Services () {
 
     const deluxeExterior = {
         title: "Deluxe Exterior",
-        description: "This is our best value service for those who want to go above and beyond with their vehicle. This is a 1 stage polish resulting in a 60% paint correction (polish) that eliminates most scratches and defects plus the standard exterior detail. Finished off with a spray on ceramic infused wax that will leave your paint refreshed and protected. An additional stage polish (2 stage) can be added for an additional $75 and will include a buffed on ceramic infused wax.",
+        description: "This is our best value service for those who want to go above and beyond with their vehicle. This is a 1 stage polish resulting in a 60% paint correction (polish) that eliminates most scratches and defects plus the basic exterior detail. Finished off with a spray on ceramic infused wax that will leave your paint refreshed and protected. An additional stage polish (2 stage) can be added for an additional $75 and will include a buffed on ceramic infused wax.",
         vehicles: [{
             car: Car1,
             price: 250
@@ -108,13 +109,20 @@ export default function Services () {
 
   return (
     <main className='flex flex-col gap-2 pb-5 items-center '>
-        <div className='flex flex-col gap-4 items-center lg:w-3/4 text-center mt-5 p-2'>
+        <div className='flex flex-col gap-4 items-center lg:w-1/2 text-center mt-5 p-2'>
             <h1 className='tracking-[5px] text-3xl text-blue-400'>SERVICES</h1>
-            <p className='lg:text-lg'>Here is our assortment of services we offer based on detaling packages and the size of the vehicle. Determine what is the best option for you and utilize the booking form to set up an appointment. We are happy to offer a %15 discount to all teachers, first responders, law enforcement, military members (active and veterans) and nurses. We are grateful for what you do for our community!</p>
+            <p className='lg:text-lg'>Here is our assortment of services we offer based on detaling packages and the size of the vehicle. Determine what is the best option for you and utilize the booking form to set up an appointment. We are happy to offer a 15% discount to all teachers, first responders, law enforcement, military members (active and veterans) and nurses. We are grateful for what you do for our community!</p>
             <p className='text-center text-sm font-extrabold'>(Pet hair, and severe dirtiness increase prices)</p>
         </div>
-        <Image src={BannerImage} alt="banner image of car" placeholder="blur" className='w-screen lg:h-[600px] lg:w-[60%] shadow-xl'/>
-        <Service serviceType={fullDetail}/>
+        <BreakPoint/>
+        <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px]'>
+            <Service serviceType={fullDetail}/>
+            <Slider before={Before4} after={After4}/>
+        </div>
+        <div className='lg:hidden'>
+            <Slider before={Before4} after={After4}/>
+            <Service serviceType={fullDetail}/>
+        </div>
         <BreakPoint/>
         <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px]'>
             <Slider before={Before2} after={After2}/>
