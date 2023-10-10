@@ -34,7 +34,7 @@ const Contact = () => {
       initial={{ opacity: 0}}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex flex-col w-full sm:w-3/4 justify-center items-center text-center gap-2">
+      className="flex flex-col w-full h-screen sm:w-3/4 justify-center items-center text-center gap-2">
         <div className='flex flex-col gap-4 items-center lg:my-[50px]'>
             <h1 className='tracking-[5px] text-3xl text-blue-400 uppercase'>Booking</h1>
             <p className='lg:text-lg lg:w-3/4 lg:text-center'>
