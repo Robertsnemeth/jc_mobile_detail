@@ -1,13 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image'
-import Slider from '../components/slider';
+import dynamic from 'next/dynamic';
+// import Slider from '../components/slider';
 import Car1 from '../../public/car-vector-4.webp';
 import Car2 from '../../public/car-vector-3.webp';
 import Car3 from '../../public/car-vector-1.webp';
 import Car4 from '../../public/car-vector-2.webp';
 import Button from '../components/button';
-import Service from '../components/service';
+// import Service from '../components/service';
 import BreakPoint from '../components/breakpoint';
 import Before1 from '../../public/IMG_3693.jpg';
 import Before2 from '../../public/IMG_3789.jpg';
@@ -22,6 +22,9 @@ import After4 from '../../public/IMG_1761.jpg';
 
 
 export default function Services () {
+
+    const Slider = dynamic(() => import('../components/slider'))
+    const Service = dynamic(() => import('../components/service'))
 
     const fullDetail = {
         title: "Full Detail",
@@ -108,8 +111,8 @@ export default function Services () {
     }
 
   return (
-    <main className='flex flex-col gap-2 pb-5 items-center '>
-        <div className='flex flex-col gap-4 items-center lg:w-1/2 text-center mt-5 p-2'>
+    <main className='flex flex-col gap-2 pb-5 items-center w-screen'>
+        <div className='flex flex-col gap-4 items-center lg:w-3/4 text-center lg:my-[50px] p-2'>
             <h1 className='tracking-[5px] text-3xl text-blue-400'>SERVICES</h1>
             <p className='lg:text-lg'>Here is our assortment of services we offer based on detaling packages and the size of the vehicle. Determine what is the best option for you and utilize the booking form to set up an appointment. We are happy to offer a 15% discount to all teachers, first responders, law enforcement, military members (active and veterans) and nurses. We are grateful for what you do for our community!</p>
             <p className='text-center text-sm font-extrabold'>(Pet hair, and severe dirtiness increase prices)</p>
