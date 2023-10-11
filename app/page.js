@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-5 items-center w-screen">
       <HomeVideo/>
-      <section className='m-2 lg:m-5 p-2 lg:p-0 lg:w-3/4 lg:flex lg:gap-10 lg:h-screen lg:justify-between'>
+      <section className='m-2 lg:m-5 p-2 lg:p-0 lg:w-3/4 lg:flex lg:gap-10 lg:h-[400px] lg:justify-between'>
         <div className='lg:flex lg:flex-col lg:w-1/2'>
           <h1 className='text-1xl lg:text-3xl text-center lg:text-start tracking-[5px] capitalize mb-2 text-blue-400'>About Me</h1>
           <p className='text-center lg:text-start lg:text-lg'>
@@ -29,7 +29,7 @@ export default function Home() {
         <Gallary/>
       </section> */}
       {/* <BreakPoint/> */}
-      <section className='m-2 p-2 flex flex-col items-center gap-4 lg:flex-row lg:gap-[300px] lg:w-3/4 lg:h-screen lg:p-0'>
+      <section className='m-2 p-2 flex flex-col items-center gap-4 lg:flex-row lg:gap-[300px] lg:w-3/4 lg:h-[400px] lg:p-0'>
       <div className='lg:flex lg:flex-col lg:w-1/2'>
         <h1 className='text-1xl lg:text-3xl text-center lg:text-start tracking-[5px] capitalize mb-2 text-blue-400'>It's all in the details</h1>
           <p className='text-center lg:text-start lg:text-lg'>
