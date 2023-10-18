@@ -12,11 +12,13 @@ import BreakPoint from '../components/breakpoint';
 import Before1 from '../../public/IMG_3693.jpg';
 import Before2 from '../../public/IMG_3789.jpg';
 import Before3 from '../../public/IMG_3842.jpg';
+import Before4 from '../../public/IMG_5540.jpg';
+import Before5 from '../../public/IMG_4370.jpg';
 import After1 from '../../public/IMG_3702.jpg';
 import After2 from '../../public/IMG_3801.jpg';
 import After3 from '../../public/IMG_3849.jpg';
-import Before4 from '../../public/IMG_5540.jpg';
-import After4 from '../../public/IMG_1761.jpg';
+import After4 from '../../public/IMG_4343.jpg';
+import After5 from '../../public/IMG_4372.jpg';
 
 
 
@@ -47,9 +49,30 @@ export default function Services () {
         }]
     }
 
+    const basicInterior = {
+        title: "Basic Interior",
+        description: "This is a light detailing of the interior, we thoroughly vacuum the entire interior, wash floor mats, clean windows, and apply protectant to interior trim.",
+        vehicles: [{
+            car: Car1,
+            price: 100
+        },
+        {
+            car: Car2,
+            price: 125
+        },
+        {
+            car: Car3,
+            price: 170
+        },
+        {
+            car: Car4,
+            price: 200
+        }]
+    }
+
     const deluxeInterior = {
         title: "Deluxe Interior",
-        description: "We address every single surface of the interior. We start with a deep vacuuming of the whole interior, wash floor mats and spot clean staining, shampoo carpets and seats if needed, clean and condition leather, scrub all plastics, clean dashboard and center console, clean door jambs, clean windows, apply protectant to interior trim, and do a final inspection to ensure quality.",
+        description: "We address every single surface of the interior. We start with a deep vacuuming of the whole interior, wash floor mats and spot clean staining, shampoo carpets and seats, clean and condition leather, scrub all plastics, clean dashboard and center console, clean door jambs, clean windows, apply protectant to interior trim, and do a final inspection to ensure quality.",
         vehicles: [{
             car: Car1,
             price: 160
@@ -118,7 +141,7 @@ export default function Services () {
             <p className='text-center text-sm font-extrabold'>(Pet hair, and severe dirtiness increase prices)</p>
         </div>
         <BreakPoint/>
-        <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px]'>
+        <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[400px]'>
             <Service serviceType={fullDetail}/>
             <Slider before={Before4} after={After4}/>
         </div>
@@ -127,21 +150,30 @@ export default function Services () {
             <Service serviceType={fullDetail}/>
         </div>
         <BreakPoint/>
-        <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px]'>
+        <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[400px]'>
+            <Slider before={Before5} after={After5}/>
+            <Service serviceType={basicInterior}/>
+        </div>
+        <BreakPoint/>
+        <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[400px]'>
+            <Service serviceType={deluxeInterior}/>
+            <Slider before={Before2} after={After2}/>
+        </div>
+        <div className='lg:hidden'>
             <Slider before={Before2} after={After2}/>
             <Service serviceType={deluxeInterior}/>
         </div>
         <BreakPoint/>
-        <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px]'>
-            <Service serviceType={basicExterior}/>
-            <Slider before={Before1} after={After1}/>
-        </div>
-        <div className='lg:hidden'>
+        <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[400px]'>
             <Slider before={Before1} after={After1}/>
             <Service serviceType={basicExterior}/>
         </div>
         <BreakPoint/>
-        <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px]'>
+        <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[400px]'>
+            <Service serviceType={deluxeExterior}/>
+            <Slider before={Before3} after={After3}/>
+        </div>
+        <div className='lg:hidden'>
             <Slider before={Before3} after={After3}/>
             <Service serviceType={deluxeExterior}/>
         </div>
