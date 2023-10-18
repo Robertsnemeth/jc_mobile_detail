@@ -10,15 +10,15 @@ import Button from '../components/button';
 // import Service from '../components/service';
 import BreakPoint from '../components/breakpoint';
 import Before1 from '../../public/IMG_3693.jpg';
-import Before2 from '../../public/IMG_3789.jpg';
-import Before3 from '../../public/IMG_3842.jpg';
-import Before4 from '../../public/IMG_5540.jpg';
-import Before5 from '../../public/IMG_4370.jpg';
+import Before2 from '../../public/IMG_3789.webp';
+import Before3 from '../../public/IMG_3842.webp';
+import Before4 from '../../public/IMG_5540.webp';
+import Before5 from '../../public/IMG_4370.webp';
 import After1 from '../../public/IMG_3702.jpg';
-import After2 from '../../public/IMG_3801.jpg';
-import After3 from '../../public/IMG_3849.jpg';
-import After4 from '../../public/IMG_4343.jpg';
-import After5 from '../../public/IMG_4372.jpg';
+import After2 from '../../public/IMG_3801.webp';
+import After3 from '../../public/IMG_3849.webp';
+import After4 from '../../public/IMG_4343.webp';
+import After5 from '../../public/IMG_4372.webp';
 
 
 
