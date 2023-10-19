@@ -10,12 +10,12 @@ import Button from '../components/button';
 // import Service from '../components/service';
 import BreakPoint from '../components/breakpoint';
 import Before1 from '../../public/IMG_3693.jpg';
-import Before2 from '../../public/IMG_3789.webp';
+import Before2 from '../../public/IMG_4414.webp';
 import Before3 from '../../public/IMG_3842.webp';
 import Before4 from '../../public/IMG_5540.webp';
 import Before5 from '../../public/IMG_4370.webp';
 import After1 from '../../public/IMG_3702.jpg';
-import After2 from '../../public/IMG_3801.webp';
+import After2 from '../../public/IMG_4421.webp';
 import After3 from '../../public/IMG_3849.webp';
 import After4 from '../../public/IMG_4343.webp';
 import After5 from '../../public/IMG_4372.webp';
@@ -134,10 +134,10 @@ export default function Services () {
     }
 
   return (
-    <main className='flex flex-col gap-2 pb-5 items-center w-screen'>
+    <main className='flex flex-col gap-2 pb-5 items-center xl:w-3/4 xl:m-auto'>
         <div className='flex flex-col gap-4 items-center lg:w-3/4 text-center lg:my-[50px] p-2'>
             <h1 className='tracking-[5px] text-3xl text-blue-400'>SERVICES</h1>
-            <p className='lg:text-lg'>Here is our assortment of services we offer based on detaling packages and the size of the vehicle. Determine what is the best option for you and utilize the booking form to set up an appointment. We are happy to offer a 15% discount to all teachers, first responders, law enforcement, military members (active and veterans) and nurses. We are grateful for what you do for our community!</p>
+            <p className='lg:text-lg 2xl:w-3/4'>Here is our assortment of services we offer based on detaling packages and the size of the vehicle. Determine what is the best option for you and utilize the booking form to set up an appointment. We are happy to offer a 15% discount to all teachers, first responders, law enforcement, military members (active and veterans) and nurses. We are grateful for what you do for our community!</p>
             <p className='text-center text-sm font-extrabold'>(Pet hair, and severe dirtiness increase prices)</p>
         </div>
         <BreakPoint/>
@@ -150,7 +150,7 @@ export default function Services () {
             <Service serviceType={fullDetail}/>
         </div>
         <BreakPoint/>
-        <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[400px]'>
+        <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[400px] w-full'>
             <Slider before={Before5} after={After5}/>
             <Service serviceType={basicInterior}/>
         </div>
@@ -169,7 +169,7 @@ export default function Services () {
             <Service serviceType={basicExterior}/>
         </div>
         <BreakPoint/>
-        <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[400px]'>
+        <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[500px]'>
             <Service serviceType={deluxeExterior}/>
             <Slider before={Before3} after={After3}/>
         </div>

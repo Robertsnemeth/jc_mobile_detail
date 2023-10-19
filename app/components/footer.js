@@ -6,7 +6,7 @@ import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 
 const footer = () => {
   return (
-    <footer className='bg-black text-white flex flex-col gap-2 items-center p-4'>
+    <footer className='bg-black text-white flex flex-col gap-2 items-center p-4 max-w-screen'>
         <section className='flex gap-4'>
             <a href="https://www.facebook.com/profile.php?id=61551566326296" target="_blank">
               <FaFacebookF size='30' className='text-blue-400 hover:text-blue-300'/>

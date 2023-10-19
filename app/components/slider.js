@@ -40,7 +40,7 @@ const slider = ({
       whileInView={{ opacity: 1, x: 0}}
       className="w-full relative lg:m-5 lg:w-[60%]" onPointerUp={handleMouseUp}>
       <div
-        className="relative w-full lg:w-3/4 xl:w-1/2 aspect-[70/45] m-auto lg:mt-10 overflow-hidden select-none shadow-md"
+        className="relative w-full md:w-3/4 xl:w-1/2 aspect-[70/45] m-auto lg:mt-10 overflow-hidden select-none shadow-md"
         onPointerMove={handleMove}
         onPointerDown={handleMouseDown}
       >

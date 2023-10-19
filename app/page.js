@@ -13,7 +13,7 @@ export default function Home() {
   const HomeVideo = dynamic(() => import('./components/homeVideo'))
 
   return (
-    <main className="flex flex-col gap-5 items-center w-screen">
+    <main className="flex flex-col gap-5 items-center">
       <HomeVideo/>
       <section className='m-2 lg:m-5 p-2 lg:p-0 lg:w-3/4 lg:flex lg:gap-10 lg:h-[400px] lg:justify-between'>
         <div className='lg:flex lg:flex-col lg:w-1/2'>

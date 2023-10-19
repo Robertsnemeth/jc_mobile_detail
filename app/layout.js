@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={nunito.className}>
-      <body className='scroll-smooth max-w-screen'>
+      <body className='scroll-smooth'>
         <Navbar/>
         {children}
         <Footer/>
