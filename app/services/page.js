@@ -141,7 +141,7 @@ export default function Services () {
             <p className='text-center text-sm font-extrabold'>(Pet hair, and severe dirtiness increase prices)</p>
         </div>
         <BreakPoint/>
-        <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[400px]'>
+        <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[500px]'>
             <Service serviceType={fullDetail}/>
             <Slider before={Before4} after={After4}/>
         </div>
