@@ -150,7 +150,7 @@ export default function Services () {
             <Service serviceType={fullDetail}/>
         </div>
         <BreakPoint/>
-        <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[400px] w-full'>
+        <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[500px] w-full'>
             <Slider before={Before5} after={After5}/>
             <Service serviceType={basicInterior}/>
         </div>
@@ -164,7 +164,7 @@ export default function Services () {
             <Service serviceType={deluxeInterior}/>
         </div>
         <BreakPoint/>
-        <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[400px]'>
+        <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[500px]'>
             <Slider before={Before1} after={After1}/>
             <Service serviceType={basicExterior}/>
         </div>
