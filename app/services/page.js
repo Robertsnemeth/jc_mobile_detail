@@ -53,7 +53,7 @@ export default function Services () {
 
     const interiorExteriorLevel2 = {
         title: "Interior & Exterior Level 2 (Full+)",
-        description: "Estimated Duration: 3 hours and 30 minutes. Exterior includes: Wheel and Tire Cleaning + Wheel Well Cleaning, Pre Wash (No Contact), Bug Removal, Foam Wash, Door Jamb Wipe Down, Exterior Window Cleaning, Clay Bar (Removes Embedded Contaminants), 3-6 Month Spray Sealant. Interior includes: Full Vacuum including Air Blowout, Interior Window Cleaning, All Hard Surfaces Scrubbed and Wiped. Seat Cleaning includes: Crevice Cleaning. ",
+        description: "Estimated Duration: 3 hours and 30 minutes. Exterior includes: Wheel and Tire Cleaning + Wheel Well Cleaning, Pre Wash (No Contact), Bug Removal, Foam Wash, Door Jamb Wipe Down, Exterior Window Cleaning, Clay Bar (Removes Embedded Contaminants), Paint Enhancement (1 Step Correction) 1 Step Correction can fix roughly 50% of paint inperfections (Swirling/Scratching/Water Spots), finishing off your paint with an AIO (All In One) polish and sealant leaving your paint silky smooth and defect free. Interior includes: Full Vacuum including Air Blowout, Interior Window Cleaning, All Hard Surfaces Scrubbed and Wiped. Seat Cleaning includes: Crevice Cleaning. ",
         vehicles: [{
             car: Car1,
             price: 370
@@ -158,7 +158,7 @@ export default function Services () {
 
     const exteriorLevel2 = {
         title: "Exterior Level 2 - Our Most Popular Package",
-        description: "Paint Enhacnment (1 Step Correction). 1 Step Correction can fix roughly 50% of paint inperfections (Swirling/Scratching/Water Spots). This package includes a Full Exterior Detail + Iron Decon and AIO (All In One) polish and sealant leaving your paint silky smooth and brigning clarity and vibrancy back to your paint. This is a great level for anyone looking to bring their daily vehicles paint back to life and protect their investment!  ",
+        description: "Paint Enhancement (1 Step Correction). 1 Step Correction can fix roughly 50% of paint inperfections (Swirling/Scratching/Water Spots). This package includes a Full Exterior Detail + Iron Decon and AIO (All In One) polish and sealant leaving your paint silky smooth and brigning clarity and vibrancy back to your paint. This is a great level for anyone looking to bring their daily vehicles paint back to life and protect their investment!  ",
         vehicles: [{
             car: Car1,
             price: 300
@@ -179,7 +179,7 @@ export default function Services () {
 
     const exteriorLevel3 = {
         title: "Exterior Level 3",
-        description: "Paint Enhacnment (2 Step Correction). 2 Step Correction can fix roughly 80%-90% of paint imperfections (Swirling/Scratching/Water Spots). This package includes a full exterior detail + Iron Decon, Wool Pad Rotary Cut to eliminate those stubborn defects, and finishing off your paint with an AIO (All In One) polish and sealant leaving your paint silky smooth and defect free. This package is perfectly paired with our Ceramic Coating, making your vehicle look better than ever before!",
+        description: "Paint Enhancement (2 Step Correction). 2 Step Correction can fix roughly 80%-90% of paint imperfections (Swirling/Scratching/Water Spots). This package includes a full exterior detail + Iron Decon, Wool Pad Rotary Cut to eliminate those stubborn defects, and finishing off your paint with an AIO (All In One) polish and sealant leaving your paint silky smooth and defect free. This package is perfectly paired with our Ceramic Coating, making your vehicle look better than ever before!",
         vehicles: [{
             car: Car1,
             price: 450
