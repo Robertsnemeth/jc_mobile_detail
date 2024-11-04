@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import TwoLogo from '../public/JCDetailing-Logo-TwoColor.png'
+import FamilyPhoto from '../public/IMG_9096.webp'
 import Gallary from './components/gallary';
 import Button from './components/button';
 import Testimonials from './components/testimonials';
@@ -15,14 +16,15 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-5 items-center">
       <HomeVideo/>
-      <section className='m-2 lg:m-5 p-2 lg:p-0 lg:w-3/4 lg:flex lg:gap-10 lg:h-[400px] lg:justify-between'>
+      <section className='m-2 lg:m-5 p-2 lg:p-0 lg:w-3/4 lg:flex lg:flex-row lg:gap-10 lg:h-[400px] lg:justify-between flex flex-col items-center'>
+      <Image src={FamilyPhoto} alt="company logo" className='w-[400px] hidden lg:block rounded'/>
         <div className='lg:flex lg:flex-col lg:w-1/2'>
           <h1 className='text-1xl lg:text-3xl text-center lg:text-start tracking-[5px] capitalize mb-2 text-blue-400'>About Me</h1>
           <p className='text-center lg:text-start lg:text-lg'>
             Hello everyone, my name is Jordan, owner and operator of JC Mobile Detailing! I started a detailing business simply because I love working on and restoring vehicles to their former glory! With more than 8 years of experience restoring and revitalizing dirty and faded vehicles to showroom quality, I look forward to serving my surrounding communities with the craft I love! We pride ourselves on being Enumclaw's premier mobile detailer!       
           </p>
         </div>
-          <Image src={TwoLogo} alt="company logo" className='w-[300px] hidden lg:block'/>
+        <Image src={FamilyPhoto} alt="company logo" className='w-[600px] lg:hidden block rounded mt-5'/>
       </section>
       <BreakPoint/>
       {/* <section className='m-2 p-2 flex flex-col items-center'>
