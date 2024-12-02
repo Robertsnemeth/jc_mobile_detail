@@ -21,7 +21,9 @@ import After4 from '../../public/IMG_4343.webp';
 import After5 from '../../public/IMG_4372.webp';
 import Cermaic1 from '../../public/IMG_8422.webp';
 import Cermaic2 from '../../public/IMG_8399.jpg';
+import Logo from '../../public/JCDetailing-Logo-TwoColor.png';
 
+import Image from 'next/image';
 
 
 
@@ -236,23 +238,33 @@ export default function Services () {
             <Service serviceType={interiorExteriorLevel1}/>
         </div>
         <BreakPoint/>
-        <Service className='lg:px-[50px] lg:h-[500px]' serviceType={interiorExteriorLevel2}/>
+        <div className="lg:flex lg:items-center lg:justify-between">
+            <Image src={Logo} alt="logo" className='lg:w-36 lg:h-24 hidden lg:block lg:ml-48'/>
+            <Service className='lg:px-[50px] lg:h-[500px]' serviceType={interiorExteriorLevel2}/>
+        </div>
         <BreakPoint/>
-        <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[500px] w-full'>
+        <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[500px] w-full'>
+            <Service serviceType={interiorLevel1}/>
+            <Slider before={Before5} after={After5}/>
+        </div>
+        <div className='lg:hidden'>
             <Slider before={Before5} after={After5}/>
             <Service serviceType={interiorLevel1}/>
         </div>
         <BreakPoint/>
         <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[500px]'>
-            <Service serviceType={interiorLevel2}/>
             <Slider before={Before2} after={After2}/>
+            <Service serviceType={interiorLevel2}/>
         </div>
         <div className='lg:hidden'>
             <Slider before={Before2} after={After2}/>
             <Service serviceType={interiorLevel2}/>
         </div>
         <BreakPoint/>
-        <Service className='lg:px-[50px] lg:h-[500px]' serviceType={interiorLevel3}/>
+        <div className="lg:flex lg:items-center lg:justify-between">
+            <Service className='lg:px-[50px] lg:h-[500px]' serviceType={interiorLevel3}/>
+            <Image src={Logo} alt="logo" className='lg:w-36 lg:h-24 hidden lg:block lg:mr-48'/>
+        </div>
         <BreakPoint/>
         <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[500px]'>
             <Slider before={Before1} after={After1}/>
@@ -268,9 +280,16 @@ export default function Services () {
             <Service serviceType={exteriorLevel2}/>
         </div>
         <BreakPoint/>
-        <Service className='lg:px-[50px] lg:h-[500px]' serviceType={exteriorLevel3}/>
+        <div className="lg:flex lg:items-center lg:justify-between">
+            <Image src={Logo} alt="logo" className='lg:w-36 lg:h-24 hidden lg:block lg:ml-48'/>
+            <Service className='lg:px-[50px] lg:h-[500px]' serviceType={exteriorLevel3}/>
+        </div>
         <BreakPoint/>
-        <div className='lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[500px]'>
+        <div className='hidden lg:flex lg:gap-1 lg:items-center lg:px-[50px] lg:h-[500px]'>
+            <Service serviceType={ceramicCoating}/>
+            <Slider before={Cermaic1} after={Cermaic2}/>
+        </div>
+        <div className='lg:hidden'>
             <Slider before={Cermaic1} after={Cermaic2}/>
             <Service serviceType={ceramicCoating}/>
         </div>
